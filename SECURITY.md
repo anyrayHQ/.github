@@ -8,8 +8,12 @@ all [Anyray](https://github.com/anyrayHQ) repositories.
 
 **Please do not open a public issue, pull request, or discussion for security vulnerabilities.**
 
-Report it privately by **email** → **[support@anyray.ai](mailto:support@anyray.ai)** with the
-subject line `SECURITY:` and a description of the issue.
+Report privately, by either:
+
+- **Email** → **[support@anyray.ai](mailto:support@anyray.ai)** with the subject line
+  `SECURITY:` and a description of the issue, or
+- **GitHub** → [Privately report a vulnerability](https://github.com/anyrayHQ/install/security/advisories/new)
+  via Security Advisories on the affected repository.
 
 Please include, where you can:
 
