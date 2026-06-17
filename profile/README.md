@@ -68,11 +68,11 @@ workloads (code search, service logs, RAG, GitHub triage, long conversations, �
 | | |
 | --- | --- |
 | 📚 **Documentation** | [docs.anyray.ai](https://docs.anyray.ai) |
-| 🧰 **Source** | [`anyrayHQ/monorepo`](https://github.com/anyrayHQ/monorepo) — gateway, optimizer, console, `anyray-connect` |
+| 🧰 **Install repo** | [`anyrayHQ/install`](https://github.com/anyrayHQ/install) — Docker Compose, cloud templates, and gateway adapters |
 | 🚀 **Install & operate** | [Org-admin guide](https://docs.anyray.ai/get-started/overview) |
 | 👩‍💻 **Connect your tools** | [Developer guide](https://docs.anyray.ai/developers/overview) |
 | 🔐 **Security & data boundary** | [Security](https://docs.anyray.ai/operate/security) · [Data boundary](https://docs.anyray.ai/operate/data-boundary) |
 
 ---
 
-<sub>Found a security issue? See our [security policy](https://github.com/anyrayHQ/.github/blob/main/SECURITY.md). Everything else: [open an issue](https://github.com/anyrayHQ/monorepo/issues) or read the [contributing guide](https://github.com/anyrayHQ/.github/blob/main/CONTRIBUTING.md).</sub>
+<sub>Found a security issue? See our [security policy](https://github.com/anyrayHQ/.github/blob/main/SECURITY.md). Everything else: [open an issue](https://github.com/anyrayHQ/install/issues) or read the [contributing guide](https://github.com/anyrayHQ/.github/blob/main/CONTRIBUTING.md).</sub>

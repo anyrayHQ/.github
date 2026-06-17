@@ -28,6 +28,7 @@ body:
       label: Component
       description: Which part of Anyray is affected?
       options:
+        - install / deployment
         - gateway
         - optimizer
         - console / observability

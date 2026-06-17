@@ -28,7 +28,8 @@ Fixes #
 ## Checklist
 
 - [ ] Branched off `main`; one logical change per PR.
-- [ ] Followed existing conventions and extended via the existing seams (new provider / strategy / `anyray-connect` adapter registered in the relevant `REGISTRY`, not special-cased in callers).
-- [ ] Ran the package quality gate (typecheck · lint · format · test) per `CLAUDE.md` / `AGENTS.md`.
-- [ ] Updated docs under `docs/docs/` for any changed seam (provider/strategy ids, env vars or defaults, endpoints, CLI commands, billing/plan rules).
-- [ ] Added tests for new behavior and bug fixes.
+- [ ] Followed the conventions of the repository I'm changing.
+- [ ] Ran the repo's checks/tests (see its README) and they pass.
+- [ ] For deployment changes, the stack still comes up with `docker compose up -d`.
+- [ ] Updated any affected documentation.
+- [ ] Added tests where it makes sense.

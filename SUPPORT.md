@@ -12,17 +12,19 @@ Most questions are answered at **[docs.anyray.ai](https://docs.anyray.ai)**:
 - [Connect your tools](https://docs.anyray.ai/developers/connect) — `npx anyray-connect`
 - [FAQ](https://docs.anyray.ai/developers/faq)
 
-## 💬 Questions & discussion
+## 💬 Questions & help
 
-- **How-to / "is this possible" / configuration questions** →
-  [GitHub Discussions](https://github.com/anyrayHQ/monorepo/discussions).
-- **Search first** — your question may already be answered in an existing issue or discussion.
+- **How-to / "is this possible" / configuration questions** → start with the
+  [docs](https://docs.anyray.ai) and the [FAQ](https://docs.anyray.ai/developers/faq).
+- **Still stuck?** Open an issue in
+  [`anyrayHQ/install`](https://github.com/anyrayHQ/install/issues), or email
+  **[support@anyray.ai](mailto:support@anyray.ai)**.
+- **Search first** — your question may already be answered in an existing issue.
 
 ## 🐞 Bugs & feature requests
 
-Open an issue in the relevant repository (usually
-[`anyrayHQ/monorepo`](https://github.com/anyrayHQ/monorepo/issues)) using the issue forms. For a
-bug, include what you expected, what happened, and the smallest reproduction.
+Open an issue in [`anyrayHQ/install`](https://github.com/anyrayHQ/install/issues) using the issue
+forms. For a bug, include what you expected, what happened, and the smallest reproduction.
 
 > **Never include** prompt or response content, provider API keys, `ANYRAY_*` secrets, content
 > keys, or admin tokens in an issue or discussion.

@@ -22,11 +22,12 @@ This is the **organization-level community health repository** for
 
 ## Where the product lives
 
-Anyray's code and product docs are **not** here:
+Anyray's product and docs are **not** here:
 
-- **Source** → [`anyrayHQ/monorepo`](https://github.com/anyrayHQ/monorepo) — gateway, optimizer,
-  console, and the `anyray-connect` CLI.
+- **Install & deploy** → [`anyrayHQ/install`](https://github.com/anyrayHQ/install) — Docker Compose,
+  cloud templates, and gateway adapters for self-hosting Anyray.
 - **Documentation** → [docs.anyray.ai](https://docs.anyray.ai).
+- **Hosted portal** → [app.anyray.ai](https://app.anyray.ai) — sign-in, setup wizard, and billing.
 
 > GitHub only reads default community health files from the **default branch** of a repo named
 > exactly `.github`. Keep changes on `main`.

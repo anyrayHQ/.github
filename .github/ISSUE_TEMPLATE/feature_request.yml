@@ -39,6 +39,7 @@ body:
     attributes:
       label: Area
       options:
+        - install / deployment
         - gateway
         - optimizer
         - console / observability

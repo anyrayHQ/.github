@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        For the docs at [docs.anyray.ai](https://docs.anyray.ai). The source lives under `docs/` in [`anyrayHQ/monorepo`](https://github.com/anyrayHQ/monorepo).
+        For the docs at [docs.anyray.ai](https://docs.anyray.ai). Tell us the page and what's wrong, unclear, or missing.
   - type: input
     id: page
     attributes:
