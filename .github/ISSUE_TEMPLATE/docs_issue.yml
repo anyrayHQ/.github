@@ -1,0 +1,29 @@
+name: 📚 Docs issue
+description: Report something wrong, unclear, or missing in the documentation.
+title: "[docs]: "
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For the docs at [docs.anyray.ai](https://docs.anyray.ai). The source lives under `docs/` in [`anyrayHQ/monorepo`](https://github.com/anyrayHQ/monorepo).
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: URL or file path of the affected page.
+      placeholder: "https://docs.anyray.ai/get-started/install"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's wrong or missing
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested change
+    validations:
+      required: false

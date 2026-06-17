@@ -1,0 +1,58 @@
+name: ✨ Feature request
+description: Suggest an improvement or new capability for Anyray.
+title: "[feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the **problem** you're trying to solve, not just the solution you have in mind. For anything non-trivial, open this before writing code so we can agree on the approach.
+  - type: checkboxes
+    id: prechecks
+    attributes:
+      label: Before you start
+      options:
+        - label: I searched existing issues and discussions and didn't find a duplicate.
+          required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What are you trying to do, and why is it hard today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Optional. If you have one, where would it fit — a new provider, a new optimizer strategy, an anyray-connect adapter, the console?
+    validations:
+      required: false
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+    validations:
+      required: false
+  - type: dropdown
+    id: component
+    attributes:
+      label: Area
+      options:
+        - gateway
+        - optimizer
+        - console / observability
+        - anyray-connect (CLI)
+        - control plane / Anyray Portal
+        - docs
+        - other / not sure
+    validations:
+      required: false
+  - type: checkboxes
+    id: invariants
+    attributes:
+      label: Product invariants
+      description: Anyray sits on the path of every LLM request.
+      options:
+        - label: This request is consistent with Anyray's invariants — content privacy, spend governance, single admin key, and the gateway failing open. (See CONTRIBUTING.md.)
+          required: false

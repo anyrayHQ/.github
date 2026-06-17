@@ -1,0 +1,102 @@
+name: 🐞 Bug report
+description: Report something that isn't working as expected in an Anyray component.
+title: "[bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug.
+
+        🔒 **Never paste prompt or response content, provider API keys, `ANYRAY_*` secrets, content keys, or admin tokens.** A redacted, metadata-only reproduction is enough.
+
+        For security vulnerabilities, **do not open an issue** — follow the [Security Policy](https://github.com/anyrayHQ/.github/blob/main/SECURITY.md) and report privately.
+  - type: checkboxes
+    id: prechecks
+    attributes:
+      label: Before you start
+      options:
+        - label: I searched existing issues and discussions and didn't find a duplicate.
+          required: true
+        - label: This is not a security vulnerability (those go to the Security Policy, privately).
+          required: true
+        - label: My report contains no prompt/response content, provider keys, or `ANYRAY_*` secrets.
+          required: true
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      description: Which part of Anyray is affected?
+      options:
+        - gateway
+        - optimizer
+        - console / observability
+        - anyray-connect (CLI)
+        - control plane / Anyray Portal
+        - docs
+        - other / not sure
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      description: Release tag or git commit SHA you're running.
+      placeholder: "v1.2.3 or abc1234"
+    validations:
+      required: false
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What actually happened
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: The smallest reproduction you can share. Redact any content.
+      placeholder: |
+        1. cp .env.example .env and set …
+        2. docker compose up -d
+        3. Send a request: curl …
+        4. See …
+    validations:
+      required: true
+  - type: dropdown
+    id: deployment
+    attributes:
+      label: Deployment
+      options:
+        - Local Docker Compose
+        - Remote Docker host
+        - Kubernetes
+        - Railway
+        - Other
+    validations:
+      required: false
+  - type: dropdown
+    id: account-model
+    attributes:
+      label: Account model
+      description: How the affected request authenticates and bills.
+      options:
+        - API-key account (per token)
+        - Subscription seats (Claude Code / Codex)
+        - Not applicable / unsure
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs
+      description: Metadata-only logs/traces (user, team, model, provider, tokens, cost, latency, decision). No message bodies.
+      render: shell
+    validations:
+      required: false

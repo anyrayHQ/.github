@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📚 Documentation
+    url: https://docs.anyray.ai
+    about: Most questions are answered in the docs — start here.
+  - name: 💬 Questions & discussion
+    url: https://github.com/anyrayHQ/monorepo/discussions
+    about: How-to, "is this possible", and configuration questions.
+  - name: 🔒 Report a security vulnerability
+    url: https://github.com/anyrayHQ/monorepo/security/advisories/new
+    about: Do not open a public issue for security problems — report privately here. See SECURITY.md.
