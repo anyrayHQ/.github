@@ -22,7 +22,7 @@ path:
   spend store hold metadata only, content is encrypted at rest, and you can run with zero content
   retention. The only egress is the content-free usage rollup every deployment sends to Anyray for
   metering — never content.
-- **Fail-safe.** The optimizer is a fail-open hook with a hard 800 ms timeout — on any error or
+- **Fail-safe.** The optimizer is a fail-open hook with a hard 1200 ms timeout — on any error or
   timeout the gateway forwards the original request unchanged. A broken or slow optimizer can
   never break or alter inference.
 - **Drop-in.** The gateway is OpenAI-compatible — point your SDK's base URL at it and nothing
@@ -32,10 +32,10 @@ path:
 
 The whole system comes up from a single `docker compose up -d` against the compose file in the
 install repo [`anyrayHQ/install`](https://github.com/anyrayHQ/install), from published images, in
-**your** environment. Nothing is phoned home.
+**your** environment. The only data that leaves is the content-free usage rollup for metering.
 
 ```bash
-git clone anyrayHQ/install
+git clone https://github.com/anyrayHQ/install && cd install
 ./setup.sh
 docker compose up -d
 ```
@@ -51,6 +51,8 @@ token-waste patterns developers and coding agents produce every day, run against
 optimizer. Across 19 workloads it removes **~78% of input tokens** — suite-level reductions of
 **49–86%**, no provider calls required. See [`anyrayHQ/benchmarks`](https://github.com/anyrayHQ/benchmarks).
 
+On the full bill, with Claude Code on Terminal-Bench 2 tasks, total cost was **32% lower** than Claude Code direct, and the agent solved 82% of the tasks against 76%. See the [benchmark write-up](https://anyray.ai/blog/terminal-bench-2-benchmark).
+
 ## The mental model in one line
 
 You `docker compose up` the stack in your environment, redirect traffic to the Anyray gateway, and
@@ -60,7 +62,9 @@ the optimizer makes each request cheaper while failing open — with your data n
 
 | | |
 | --- | --- |
+| 🌐 **Website** | [anyray.ai](https://anyray.ai) |
 | 📚 **Documentation** | [docs.anyray.ai](https://docs.anyray.ai) |
+| 📊 **Benchmarks** | [`anyrayHQ/benchmarks`](https://github.com/anyrayHQ/benchmarks) · [Research](https://anyray.ai/research) |
 | 🧰 **Install repo** | [`anyrayHQ/install`](https://github.com/anyrayHQ/install) — Docker Compose, cloud templates, and gateway adapters |
 | 🔐 **Security & data boundary** | [Security](https://docs.anyray.ai/operate/security) · [Data boundary](https://docs.anyray.ai/operate/data-boundary) |
 
